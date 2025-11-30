@@ -1,0 +1,24 @@
+#Node Modules
+node_modules/
+
+#Logs
+logs
+*.log
+
+#Environment Variables
+.env
+
+#Runtime data
+pids/
+*.pid
+*.seed
+
+
+# Coverage directory
+coverage/
+
+# Optional: ignore IDE files
+.vscode/
+.idea/
+.DS_Store
+thumbs.db
