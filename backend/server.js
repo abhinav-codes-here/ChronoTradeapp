@@ -24,7 +24,6 @@ connectDB();
 app.get("/", (req, res) => {
   res.send("🚀 ChronoTrade Backend Server is Running");
 });
-
 // API Routes
 app.use("/api/auth", require("./routes/auth"));
 app.use("/api/skills", require("./routes/skills"));
