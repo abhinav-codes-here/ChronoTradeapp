@@ -8,7 +8,10 @@ const TopNavbar = () => {
 
   return (
     <div className="top-navbar">
-      <div className="logo">ChronoTrade</div>
+      {/* making text clickable so it routes home */}
+      <Link className="logo" to="/dashboard">
+        ChronoTrade
+      </Link>
       <div className="top-links">
         {user && (
           <>
