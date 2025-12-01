@@ -2,6 +2,11 @@
 import React from "react";
 import { Link } from "react-router-dom";
 import TopNavbar from "../components/Navbar/TopNavbar";
+import heroImg from "../assets/hero.png";
+import offerSkills from "../assets/offerSkills.png"
+import earnCredit from "../assets/earnCredit.png"
+import spendCredit from "../assets/spendCredit.png"
+import styles from './LandingPage.module.css';
 
 const LandingPage = () => {
   return (
@@ -20,25 +25,40 @@ const LandingPage = () => {
             </a>
           </div>
         </div>
-        <div className="hero-illustration">
-          {/* you can drop an image here later */}
+        <div className={`hero-illustration ${styles['user-hero-container']}`}>
+          <img className={`${styles['user-hero-img']}`} src={heroImg} alt='' />
         </div>
       </div>
 
       <section id="how-it-works" className="how-it-works">
         <h2>How It Works</h2>
         <div className="how-grid">
-          <div className="how-card">
-            <h3>Offer Skill</h3>
-            <p>Share your skills with the community.</p>
+          <div className={`${styles['user-how-card']} how-card`}>
+            
+            <h3 className={`${styles['user-heading']}`}>
+              <img className={`${styles['user-icon']}`} src={offerSkills} alt='' />
+              Offer Skill</h3>
+            <p className={`${styles['user-para']}`}>
+              Share your skills with the community.
+              </p>
           </div>
-          <div className="how-card">
-            <h3>Earn Credit</h3>
-            <p>Earn time credits for the skills you offer.</p>
+          <div className={`${styles['user-how-card']} how-card`}>
+          
+            <h3 className={`${styles['user-heading']}`}>
+              <img className={`${styles['user-icon']}`} src={earnCredit} alt='' />
+              Earn Credit</h3>
+            <p className={`${styles['user-para']}`}>
+              Earn time credits for the skills you offer.
+              </p>
           </div>
-          <div className="how-card">
-            <h3>Spend Credit</h3>
-            <p>Use time credits to learn new skills.</p>
+          <div className={`${styles['user-how-card']} how-card`}>
+            
+            <h3 className={`${styles['user-heading']}`}>
+              <img className={`${styles['user-icon']}`} src={spendCredit} alt='' />
+              Spend Credit</h3>
+            <p className={`${styles['user-para']}`}>
+              Use time credits to learn new skills.
+              </p>
           </div>
         </div>
       </section>

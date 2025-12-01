@@ -59,7 +59,7 @@ const SignUpPage = () => {
     <div className="page auth-page">
       <div className="auth-card">
         <div className="auth-header">
-          <div className="logo">ChronoTrade</div>
+          <Link to="/" className="logo">ChronoTrade</Link>
           <Link to="/login" className="link">
             Login
           </Link>

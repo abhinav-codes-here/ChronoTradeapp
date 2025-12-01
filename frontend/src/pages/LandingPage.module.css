@@ -1,0 +1,53 @@
+.user-hero-container {
+  /* Layout */
+  width: 100%;
+  /* max-width: 450px; */
+
+  /* Center the image inside the hero section */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+
+  /* Optional: adjust margin */
+  margin: 0 auto;
+
+  /* For testing layout (you can remove the border later) */
+  /* border: 2px solid black; */
+}
+
+.user-hero-img {
+  width: 100%;
+  height: 100%;
+
+  /* Ensures image is clean and not overflowing */
+  object-fit: cover;
+
+  /* Responsive rounded corners if you want */
+  /* border-radius: 12px; */
+}
+
+.user-heading{
+    /* border: 2px solid black; */
+    display: flex;
+    align-items: center;
+    font-size: 20px;
+    margin-bottom: 0;
+}
+.user-icon{
+    /* border: 2px solid black; */
+    width: 80px; 
+    
+}
+
+.user-how-card{
+    padding-top: 0;
+    padding-bottom: 0;
+}
+
+.user-para{
+    margin-top: 0;
+    margin-left: 10px;
+    font-weight: 500;
+    font-size: 16px;
+}

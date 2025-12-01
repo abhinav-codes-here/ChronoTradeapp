@@ -1,0 +1,11 @@
+.user-logo{
+    /* border: 2px solid black; */
+    width: 23px;
+    margin-right: 8px;
+}
+.user-logo-div{
+    /* border: 2px solid black; */
+    display: flex;
+    align-items: center;
+    margin: 0;
+}
